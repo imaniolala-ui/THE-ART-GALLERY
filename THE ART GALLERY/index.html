@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>THE ART GALLERY</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Italianno&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <header>
+
+        <nav>
+
+            <h2 class="logo">
+         <span class="crown">♛</span> THE ART GALLERY
+           </h2>
+
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                     <span>✧</span>
+                <li><a href="gallery.html">GALLERY</a></li>
+                     <span>✧</span>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main id="main">
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="small-heading">
+                    WELCOME TO THE ART GALLERY
+                </p>
+
+                <h1>
+                    Art is where imagination comes alive.
+                </h1>
+
+                <p class="description">
+                    Explore a collection of creativity, colour
+                    and expression.
+                </p>
+
+                <a href="gallery.html" class="button">
+                    Explore Art
+                </a>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img src="background image.png"
+                     alt="A beautiful painting displayed in an art gallery">
+
+            </div>
+
+        </section>
+
+        <section class="featured">
+
+            <p class="small-heading">
+                A GRAND COLLECTION
+            </p>
+
+            <h2>
+                Discover the Gallery
+            </h2>
+
+            <p class="section-description">
+                Every artwork has a story waiting to be discovered.
+            </p>
+
+
+            <div class="artworks">
+
+                <div class="artwork">
+
+                    <img src="./colorfulwork.jpg"
+                         alt="Colourful expressive artwork">
+
+                    <h3>
+                        Expression and Emotion
+                    </h3>
+
+                    <p>
+                        Art that speaks without words.
+                    </p>
+
+                </div>
+
+
+                <div class="artwork">
+
+                    <img src="./expressivework.jpg"
+                         alt="Expressive artwork">
+
+                    <h3>
+                        Silent Expressions
+                    </h3>
+
+                    <p>
+                        Stories told through form.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="preferences">
+
+            <p class="small-heading">
+                Welcome, Artist.
+            </p>
+
+            <h2>
+                Which art style speaks to you most?
+            </h2>
+
+            <p class="section-description">
+                Select up to three art styles you would like to explore.
+            </p>
+
+
+            <button id="dropdownButton"
+                    class="dropdown-button"
+                    aria-expanded="false">
+
+                Choose your art styles
+
+                <span>⌄</span>
+
+            </button>
+
+
+            <div id="options" class="options hidden">
+
+                <button class="style-option" data-style="Drawings">
+                    ✏️ Drawings
+                </button>
+
+                <button class="style-option" data-style="Paintings">
+                    🎨 Paintings
+                </button>
+
+                <button class="style-option" data-style="Mosaic">
+                    🖌️ Mosaic
+                </button>
+
+                <button class="style-option" data-style="Sculpture">
+                    🗿 Sculpture
+                </button>
+
+                <button class="style-option" data-style="Modern Art">
+                    🤖 Modern Art
+                </button>
+
+                <button id="randomButton" class="style-option">
+                    🎲 Random
+                </button>
+
+            </div>
+
+
+            <p id="selectionText" class="selection-text">
+                No styles selected yet.
+            </p>
+
+        </section>
+
+    </main>
+
+    <div id="randomPopup"
+         class="popup hidden"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="randomTitle">
+
+        <div class="popup-content">
+
+            <button id="closePopup"
+                    class="close-button"
+                    aria-label="Close popup">
+                ×
+            </button>
+
+            <h2 id="randomTitle">
+                Rolling infinite possibilities!
+            </h2>
+
+            <div id="dice" class="dice">
+                🎲
+            </div>
+
+            <p id="randomResult">
+                Finding your art style...
+            </p>
+
+            <button id="tryAgain" class="button hidden">
+                Try Again
+            </button>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <h2>
+            Art. Inspire. Create.
+        </h2>
+
+        <p>
+            Made By Imani
+        </p>
+
+        <p>
+            © 2026 THE ART GALLERY. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="home.js"></script>
+
+</body>
+
+</html>
